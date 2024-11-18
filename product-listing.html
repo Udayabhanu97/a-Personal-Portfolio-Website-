@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+</head>
+
+<body>
+    <!-- Navigation Bar (same as the one in your portfolio) -->
+    <nav>
+        <div class="logo">s.udaya bhanu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Intenships">Intenships</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="product-listing.html">Product Listing</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Listing Section -->
+    <section id="product-listing">
+        <h1 class="title">Product Listing</h1>
+
+        <!-- Filters and Sorting Options -->
+        <div class="filter-sort-container">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home-appliances">Home Appliances</option>
+            </select>
+
+            <label for="price-sort">Sort by Price:</label>
+            <select id="price-sort">
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+        </div>
+
+        <!-- Product List -->
+        <div id="product-list" class="product-list">
+            <!-- Example Product 1 -->
+            <div class="product-item" data-category="electronics" data-price="250">
+                <img src="product1.jpg" alt="Product 1" class="product-image">
+                <h2 class="product-name">Product 1</h2>
+                <p class="product-description">A great product for your tech needs.</p>
+                <p class="product-price">$250</p>
+            </div>
+
+            <!-- Example Product 2 -->
+            <div class="product-item" data-category="clothing" data-price="50">
+                <img src="product2.jpg" alt="Product 2" class="product-image">
+                <h2 class="product-name">Product 2</h2>
+                <p class="product-description">Comfortable and stylish clothing.</p>
+                <p class="product-price">$50</p>
+            </div>
+
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <script src="product-listing.js"></script>
+</body>
+
+</html>
